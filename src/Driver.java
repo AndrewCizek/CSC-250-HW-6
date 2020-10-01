@@ -6,7 +6,7 @@ public class Driver
 {
 	public static void main(String[] args) throws FileNotFoundException
 	{
-		Scanner input = new Scanner(new File(System.getProperty("user.der") + "/src/info.dat"));
+		Scanner input = new Scanner(new File(System.getProperty("user.dir") + "/src/info.dat"));
 		while(input.hasNext())
 		{
 			BibleBook a = new BibleBook(input.nextLine());
