@@ -1,19 +1,10 @@
-
 public class BibleBook
 {
 	private String bName;
 	private int chapters;
 	private String summary;
-
-
-	public BibleBook(String bName, int chapters, String summary)
-	{
-		this.bName = bName;
-		this.chapters = chapters;
-		this.summary = summary;
-	}
 	
-		public BibleBook(String commaDelimited)
+	public BibleBook(String commaDelimited)
 	{
 		String[] parts = commaDelimited.split(",");
 		this.bName = parts[0];
@@ -29,8 +20,6 @@ public class BibleBook
 	{
 		return this.bName;
 	}
-	
-
 }
 	
 	/*public void original()
